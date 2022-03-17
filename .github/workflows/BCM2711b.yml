@@ -89,7 +89,7 @@ jobs:
 
     - name: Configuration Customization - Build_RasPi_4b
       env:
-        CONFIG_FILE: 'bcm2711b.config'
+        CONFIG_FILE: 'bcm2711c.config'
       run: |
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x ./customize.sh && ./customize.sh
