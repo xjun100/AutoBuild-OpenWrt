@@ -86,12 +86,6 @@ jobs:
         git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
         #svn checkout https://github.com/xjun100/openwrt-packages/trunk/luci-app-clash package/luci-app-clash
         svn checkout https://github.com/xjun100/openwrt-packages/trunk/luci-app-openclash package/luci-app-openclash
-        #git clone "your_github_link" package/"your_folder_name"      
-
-    #- name: Import external feeds - JerryKuKu Argon
-    #  working-directory: ./openwrt
-    #  run: |
-    #    git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 
     - name: Configuration Customization - Build_RasPi_4b
       env:
